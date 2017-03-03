@@ -13,7 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+resid = X * theta - y;
 
+J = (resid' * resid) / (2 * m);
 
 
 
